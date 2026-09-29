@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #0D1321; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }
+    .motif-blue { background: #0D1321; width: 80%; }
+    .motif-amber { background: #F5A623; width: 20%; }
+    .content { text-align: center; color: #F4F1EA; max-width: 900px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 64px; color: #F5A623; margin-bottom: 2rem; }
+    p { font-family: 'Inter', sans-serif; font-size: 28px; color: #00B4D8; font-weight: 700; margin-bottom: 3rem; }
+    .btn-demo { border: 2px solid #00B4D8; padding: 20px 40px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 800; color: #fff; text-decoration: none; font-size: 20px; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.3s; }
+    .btn-demo:hover { background: #00B4D8; color: #0D1321; }
+    .footer { position: absolute; bottom: 48px; font-family: 'Inter', sans-serif; color: #F4F1EA; opacity: 0.5; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif"><div class="motif-blue"></div><div class="motif-amber"></div></div>
+    <div class="content">
+      <h2>Obrigado!</h2>
+      <p>Aplicação Prática no CineCirrus</p>
+      <div style="margin-top:20px">
+        <span class="btn-demo">Demonstração no VS Code</span>
+      </div>
+    </div>
+    <div class="footer">Grupo: Vinícius Valentim - Jader De Albuquerque - Mateus Felix · Atividade Frameworks CSS</div>
+  </div>
+</body>
+</html>

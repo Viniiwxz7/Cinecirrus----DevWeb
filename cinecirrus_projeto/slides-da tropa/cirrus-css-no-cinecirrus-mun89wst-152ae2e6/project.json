@@ -1,0 +1,130 @@
+{
+  "id": "cirrus-css-no-cinecirrus-mun89wst-152ae2e6",
+  "title": "Cirrus CSS no CineCirrus",
+  "designType": "deck",
+  "resourceUri": "manus-resource://manus-slides/deck/cirrus-css-no-cinecirrus-mun89wst-152ae2e6",
+  "widgetUri": "manus-widget://manus-slides/studio/deck/cirrus-css-no-cinecirrus-mun89wst-152ae2e6",
+  "versionId": "v-mun8ciyv-fa69e5ce",
+  "projectDir": "/home/ubuntu/manus-slides/cirrus-css-no-cinecirrus-mun89wst-152ae2e6",
+  "activeFile": "form_accordion.html",
+  "files": [
+    {
+      "path": "capa.html",
+      "mimeType": "text/html",
+      "title": "capa.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #0D1321; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    .content { text-align: center; color: #F4F1EA; max-width: 900px; }\n    .eyebrow { font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.2em; color: #00B4D8; font-weight: 700; margin-bottom: 2rem; font-size: 1.2rem; }\n    h1 { font-family: 'Playfair Display', serif; font-size: 80px; line-height: 1.1; margin-bottom: 1.5rem; color: #F5A623; }\n    .subtitle { font-family: 'Inter', sans-serif; font-size: 24px; color: #F4F1EA; opacity: 0.8; margin-bottom: 3rem; }\n    .footer { position: absolute; bottom: 48px; font-family: 'Inter', sans-serif; color: #00B4D8; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <div class=\"content\">\n      <p class=\"eyebrow\">Frameworks CSS & Interfaces Web</p>\n      <h1>Cirrus CSS no CineCirrus</h1>\n      <p class=\"subtitle\">Componentes modulares para interfaces de cinema ágeis e leves.</p>\n    </div>\n    <div class=\"footer\">Parte 2 & 3: Apresentação de Framework</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "contexto.html",
+      "mimeType": "text/html",
+      "title": "contexto.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 40px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .layout { display: flex; gap: 48px; flex: 1; }\n    .visual { flex: 1; background: #1A2238; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; }\n    .visual img { width: 80%; object-fit: contain; }\n    .text { flex: 1.2; display: flex; flex-direction: column; justify-content: center; }\n    p { font-family: 'Inter', sans-serif; font-size: 22px; color: #1D2D44; line-height: 1.6; margin-bottom: 24px; }\n    ul { list-style: none; }\n    li { font-family: 'Inter', sans-serif; font-size: 20px; color: #1D2D44; margin-bottom: 16px; padding-left: 32px; position: relative; }\n    li::before { content: '→'; position: absolute; left: 0; color: #00B4D8; font-weight: 700; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n   <header><h2>O que é o Cirrus CSS?</h2></header>\n   <div class=\"layout\">\n     <div class=\"visual\">\n        <div style=\"width: 200px; height: 200px; border-radius: 50%; background: rgba(0, 180, 216, 0.2); position: relative; display: flex; align-items: center; justify-content: center;\">\n          <div style=\"width: 120px; height: 60px; background: #00B4D8; border-radius: 60px 60px 0 0;\"></div>\n          <div style=\"width: 140px; height: 10px; background: #F5A623; border-radius: 5px; position: absolute; bottom: 40px;\"></div>\n        </div>\n      </div>\n      <div class=\"text\">\n        <p>Cirrus é um framework SCSS moderno, <strong>modular</strong> e centrado em <strong>componentes</strong>, criado por Stanley Lim (Spiderpig86) em 2016.</p>\n        <ul>\n          <li><strong>Histórico:</strong> Evoluiu de um reset CSS simples para uma biblioteca completa de prototipagem rápida.</li>\n          <li><strong>Contexto:</strong> Ocupa o espaço entre o utilitarismo do Tailwind e a rigidez do Bootstrap.</li>\n          <li><strong>Filosofia:</strong> Permitir estilos bonitos \"fora da caixa\" sem sacrificar a leveza (aprox. 31kB gzipped).</li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"page-num\">02</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "vantagens.html",
+      "mimeType": "text/html",
+      "title": "vantagens.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 40px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; flex: 1; }\n    .card { background: #fff; padding: 32px; border-radius: 12px; border-top: 4px solid #0D1321; }\n    .card.accent { border-top-color: #F5A623; }\n    h3 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 24px; color: #1D2D44; }\n    li { font-family: 'Inter', sans-serif; font-size: 18px; color: #1D2D44; margin-bottom: 16px; line-height: 1.4; padding-left: 28px; position: relative; list-style: none; }\n    .pos li::before { content: '✔'; position: absolute; left: 0; color: #00B4D8; }\n    .neg li::before { content: '✘'; position: absolute; left: 0; color: #F5A623; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <header><h2>Vantagens e desvantagens</h2></header>\n    <div class=\"grid\">\n      <div class=\"card\">\n        <h3>Pontos Fortes (Prós)</h3>\n        <ul class=\"pos\">\n          <li><strong>Extremamente Leve:</strong> Ideal para projetos onde o tempo de carregamento é crítico.</li>\n          <li><strong>Curva de Aprendizado:</strong> Nomes de classes intuitivos (ex: .card, .avatar, .modal).</li>\n          <li><strong>Sem JavaScript:</strong> A maioria das interações (modais, tabs) funciona apenas com CSS.</li>\n          <li><strong>Altamente Configurável:</strong> Via SCSS para quem precisa de controle total.</li>\n        </ul>\n      </div>\n      <div class=\"card accent\">\n        <h3>Limites (Contras)</h3>\n        <ul class=\"neg\">\n          <li><strong>Comunidade Menor:</strong> Menos recursos e templates prontos comparado ao Bootstrap.</li>\n          <li><strong>Ecossistema de Plugins:</strong> Poucas extensões de terceiros disponíveis.</li>\n          <li><strong>Customização Complexa:</strong> Exige conhecimento de SCSS para fugir do padrão profundo.</li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"page-num\">03</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "como_usar.html",
+      "mimeType": "text/html",
+      "title": "como_usar.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 30px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .intro { font-family: 'Inter', sans-serif; font-size: 20px; margin-bottom: 24px; color: #1D2D44; }\n    .code-block { background: #1A2238; color: #E0FBFC; padding: 32px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 18px; line-height: 1.5; flex: 1; border-left: 6px solid #00B4D8; }\n    .comment { color: #64748b; font-style: italic; }\n    .tag { color: #00B4D8; }\n    .attr { color: #F5A623; }\n    .val { color: #8BE9FD; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n   <header><h2>Como instalar e usar</h2></header>\n   <p class=\"intro\">A forma mais rápida de começar é via CDN no <code>&lt;head&gt;</code> do seu HTML:</p>\n   <div class=\"code-block\">\n      <span class=\"comment\">&lt;!-- Importando o framework via CDN --&gt;</span><br>\n      &lt;<span class=\"tag\">link</span> <span class=\"attr\">rel</span>=<span class=\"val\">\"stylesheet\"</span> <br>\n      &nbsp;&nbsp;<span class=\"attr\">href</span>=<span class=\"val\">\"https://unpkg.com/cirrus-ui/dist/cirrus.min.css\"</span>&gt;<br><br>\n      <span class=\"comment\">&lt;!-- Exemplo de uso de Card --&gt;</span><br>\n      &lt;<span class=\"tag\">div</span> <span class=\"attr\">class</span>=<span class=\"val\">\"card\"</span>&gt;<br>\n      &nbsp;&nbsp;&lt;<span class=\"tag\">div</span> <span class=\"attr\">class</span>=<span class=\"val\">\"card__container\"</span>&gt;<br>\n      &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class=\"tag\">h2</span> <span class=\"attr\">class</span>=<span class=\"val\">\"card__title\"</span>&gt;Título do Card&lt;/<span class=\"tag\">h2</span>&gt;<br>\n      &nbsp;&nbsp;&lt;/<span class=\"tag\">div</span>&gt;<br>\n      &lt;/<span class=\"tag\">div</span>&gt;\n   </div>\n    <div class=\"page-num\">04</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "card_table.html",
+      "mimeType": "text/html",
+      "title": "card_table.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 30px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; }\n    .example { background: #fff; padding: 24px; border-radius: 12px; display: flex; flex-direction: column; gap: 20px; justify-content: center; border: 1px solid #dce3ee; }\n    .code { background: #1A2238; color: #E0FBFC; padding: 24px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 14px; line-height: 1.4; }\n    .cirrus-card { border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 15px; }\n    .cirrus-table { width: 100%; border-collapse: collapse; }\n    .cirrus-table th { background: #0D1321; color: #fff; text-align: left; padding: 8px; }\n    .cirrus-table td { border-bottom: 1px solid #eee; padding: 8px; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <header><h2>Componentes 1 e 2: Card e Table</h2></header>\n    <div class=\"layout\">\n      <div class=\"example\">\n        <div class=\"cirrus-card\">\n          <p style=\"font-weight:bold;margin-bottom:5px\">Interstellar (2014)</p>\n          <p style=\"font-size:14px;color:#666\">Christopher Nolan</p>\n        </div>\n        <table class=\"cirrus-table\">\n          <thead><tr><th>Filme</th><th>Ano</th></tr></thead>\n          <tbody><tr><td>Chihiro</td><td>2001</td></tr></tbody>\n        </table>\n      </div>\n      <div class=\"code\">\n<pre>&lt;!-- 1. Card --&gt;\n&lt;div class=\"card\"&gt;\n  &lt;div class=\"card__container\"&gt;\n    &lt;p class=\"card__title\"&gt;...&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;!-- 2. Table --&gt;\n&lt;div class=\"table-container\"&gt;\n  &lt;table class=\"table\"&gt;\n    &lt;thead&gt;...&lt;/thead&gt;\n    &lt;tbody&gt;...&lt;/tbody&gt;\n  &lt;/table&gt;\n&lt;/div&gt;</pre>\n      </div>\n    </div>\n    <div class=\"page-num\">05</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "form_accordion.html",
+      "mimeType": "text/html",
+      "title": "form_accordion.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 30px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .layout { display: flex; flex-direction: column; gap: 24px; flex: 1; }\n    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }\n    .example { background: #fff; padding: 24px; border-radius: 12px; border: 1px solid #dce3ee; }\n    .code { background: #1A2238; color: #E0FBFC; padding: 24px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 14px; line-height: 1.4; }\n    input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #eee; border-radius: 4px; }\n    summary { font-weight: bold; cursor: pointer; padding: 8px; background: #f8fafc; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <header><h2>Componentes 3 e 4: Form e Accordion</h2></header>\n    <div class=\"layout\">\n      <div class=\"row\">\n        <div class=\"example\">\n          <label style=\"font-size:14px\">Nome do Filme\n            <input type=\"text\" placeholder=\"Ex: Titanic\" />\n          </label>\n        </div>\n        <div class=\"code\">\n<pre>&lt;!-- 3. Form (Input) --&gt;\n&lt;label&gt;Nome do Filme\n  &lt;input type=\"text\" /&gt;\n&lt;/label&gt;</pre>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"example\">\n          <details open>\n            <summary>Sinopse</summary>\n            <p style=\"padding:10px;font-size:14px\">Texto oculto do filme...</p>\n          </details>\n        </div>\n        <div class=\"code\">\n<pre>&lt;!-- 4. Accordion --&gt;\n&lt;details&gt;\n  &lt;summary&gt;Sinopse&lt;/summary&gt;\n  &lt;p&gt;Resumo do filme vai aqui.&lt;/p&gt;\n&lt;/details&gt;</pre>\n        </div>\n      </div>\n    </div>\n    <div class=\"page-num\">06</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "tabs_modal.html",
+      "mimeType": "text/html",
+      "title": "tabs_modal.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    header { padding-top: 10px; margin-bottom: 30px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }\n    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; }\n    .example { background: #fff; padding: 24px; border-radius: 12px; display: flex; flex-direction: column; gap: 20px; border: 1px solid #dce3ee; }\n    .code { background: #1A2238; color: #E0FBFC; padding: 24px; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 14px; line-height: 1.4; }\n    .cirrus-tabs { border-bottom: 2px solid #00B4D8; display: inline-block; padding: 5px 15px; font-weight: bold; color: #00B4D8; }\n    .cirrus-modal { border: 2px solid #F5A623; padding: 20px; border-radius: 8px; background: #fff9f0; }\n    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <header><h2>Componentes 5 e extra: Tabs e Modal</h2></header>\n    <div class=\"layout\">\n      <div class=\"example\">\n        <div class=\"cirrus-tabs\">Aba Ativa</div>\n        <div class=\"cirrus-modal\">\n          <p style=\"font-weight:bold\">Título do Modal</p>\n          <p style=\"font-size:13px\">Sobreposto à tela principal.</p>\n        </div>\n      </div>\n      <div class=\"code\">\n<pre>&lt;!-- 5. Tabs --&gt;\n&lt;div class=\"tab-container\"&gt;\n  &lt;ul&gt;\n    &lt;li class=\"tab-item selected\"&gt;\n      &lt;a&gt;Aba&lt;/a&gt;\n    &lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;\n\n&lt;!-- Extra. Modal --&gt;\n&lt;div class=\"modal\"&gt;\n  &lt;div class=\"modal-content\"&gt;\n    &lt;!-- Conteúdo --&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</pre>\n      </div>\n    </div>\n    <div class=\"page-num\">07</div>\n  </div>\n</body>\n</html>\n"
+    },
+    {
+      "path": "projeto.html",
+      "mimeType": "text/html",
+      "title": "projeto.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap\" rel=\"stylesheet\">\n  <style>\n    * { margin: 0; padding: 0; box-sizing: border-box; }\n    .slide-container { width: 1280px; min-height: 720px; background: #0D1321; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }\n    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }\n    .motif-blue { background: #0D1321; width: 80%; }\n    .motif-amber { background: #F5A623; width: 20%; }\n    .content { text-align: center; color: #F4F1EA; max-width: 900px; }\n    h2 { font-family: 'Playfair Display', serif; font-size: 64px; color: #F5A623; margin-bottom: 2rem; }\n    p { font-family: 'Inter', sans-serif; font-size: 28px; color: #00B4D8; font-weight: 700; margin-bottom: 3rem; }\n    .btn-demo { border: 2px solid #00B4D8; padding: 20px 40px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 800; color: #fff; text-decoration: none; font-size: 20px; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.3s; }\n    .btn-demo:hover { background: #00B4D8; color: #0D1321; }\n    .footer { position: absolute; bottom: 48px; font-family: 'Inter', sans-serif; color: #F4F1EA; opacity: 0.5; font-size: 14px; }\n  </style>\n</head>\n<body>\n  <div class=\"slide-container\">\n    <div class=\"motif\"><div class=\"motif-blue\"></div><div class=\"motif-amber\"></div></div>\n    <div class=\"content\">\n      <h2>Obrigado!</h2>\n      <p>Aplicação Prática no CineCirrus</p>\n      <div style=\"margin-top:20px\">\n        <span class=\"btn-demo\">Demonstração no VS Code</span>\n      </div>\n    </div>\n    <div class=\"footer\">Grupo: Manus AI · Atividade Frameworks CSS</div>\n  </div>\n</body>\n</html>\n"
+    }
+  ],
+  "scaffolds": [],
+  "viewState": {
+    "mode": "preview",
+    "zoom": 1,
+    "slide_ids": [
+      "capa",
+      "contexto",
+      "vantagens",
+      "como_usar",
+      "card_table",
+      "form_accordion",
+      "tabs_modal",
+      "projeto"
+    ],
+    "outline": [
+      {
+        "id": "capa",
+        "title": "Cirrus CSS no CineCirrus",
+        "summary": "Capa da apresentação com nome do projeto, framework escolhido e objetivo da atividade.",
+        "state": "edited"
+      },
+      {
+        "id": "contexto",
+        "title": "O que é o Cirrus CSS?",
+        "summary": "Introdução, histórico/contexto e posicionamento do framework como SCSS modular, responsivo e centrado em componentes.",
+        "state": "edited"
+      },
+      {
+        "id": "vantagens",
+        "title": "Vantagens e desvantagens",
+        "summary": "Comparação honesta dos pontos fortes e limites para um projeto pequeno.",
+        "state": "edited"
+      },
+      {
+        "id": "como_usar",
+        "title": "Como instalar e usar",
+        "summary": "Mostrar a instalação por CDN e o padrão de classes com um exemplo pequeno.",
+        "state": "edited"
+      },
+      {
+        "id": "card_table",
+        "title": "Componentes 1 e 2: Card e Table",
+        "summary": "Explicar card e table, mostrar o funcionamento e o código básico.",
+        "state": "edited"
+      },
+      {
+        "id": "form_accordion",
+        "title": "Componentes 3 e 4: Form e Accordion",
+        "summary": "Explicar formulário e accordion, mostrar o funcionamento e o código básico.",
+        "state": "edited"
+      },
+      {
+        "id": "tabs_modal",
+        "title": "Componentes 5 e extra: Tabs e Modal",
+        "summary": "Explicar tabs e modal, mostrar o funcionamento e o código básico sem usar button.",
+        "state": "edited"
+      },
+      {
+        "id": "projeto",
+        "title": "Aplicação no CineCirrus",
+        "summary": "Mostrar como o framework foi aplicado nas telas das quatro entidades e fechar com a demonstração.",
+        "state": "edited"
+      }
+    ],
+    "generate_mode": "html",
+    "deck_topic": "education",
+    "style_request": "Didática, simples e visual, em português. Use azul-noite, ciano e âmbar, com estética de catálogo de cinema e foco em código curto. Estilo visual editorial moderno."
+  },
+  "createdAt": "2026-09-29T22:08:21.582Z",
+  "updatedAt": "2026-09-29T22:10:24.474Z"
+}

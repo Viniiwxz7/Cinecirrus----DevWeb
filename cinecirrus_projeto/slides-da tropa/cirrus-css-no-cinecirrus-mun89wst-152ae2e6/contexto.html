@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { width: 1280px; min-height: 720px; background: #F4F1EA; display: flex; flex-direction: column; padding: 48px; position: relative; }
+    .motif { position: absolute; top: 0; left: 0; width: 100%; height: 6px; display: flex; }
+    .motif-blue { background: #0D1321; width: 80%; }
+    .motif-amber { background: #F5A623; width: 20%; }
+    header { padding-top: 10px; margin-bottom: 40px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: #0D1321; }
+    .layout { display: flex; gap: 48px; flex: 1; }
+    .visual { flex: 1; background: #1A2238; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .visual img { width: 80%; object-fit: contain; }
+    .text { flex: 1.2; display: flex; flex-direction: column; justify-content: center; }
+    p { font-family: 'Inter', sans-serif; font-size: 22px; color: #1D2D44; line-height: 1.6; margin-bottom: 24px; }
+    ul { list-style: none; }
+    li { font-family: 'Inter', sans-serif; font-size: 20px; color: #1D2D44; margin-bottom: 16px; padding-left: 32px; position: relative; }
+    li::before { content: '→'; position: absolute; left: 0; color: #00B4D8; font-weight: 700; }
+    .page-num { position: absolute; bottom: 48px; right: 48px; font-family: 'Inter', sans-serif; color: #1D2D44; opacity: 0.5; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif"><div class="motif-blue"></div><div class="motif-amber"></div></div>
+   <header><h2>O que é o Cirrus CSS?</h2></header>
+   <div class="layout">
+     <div class="visual">
+        <div style="width: 200px; height: 200px; border-radius: 50%; background: rgba(0, 180, 216, 0.2); position: relative; display: flex; align-items: center; justify-content: center;">
+          <div style="width: 120px; height: 60px; background: #00B4D8; border-radius: 60px 60px 0 0;"></div>
+          <div style="width: 140px; height: 10px; background: #F5A623; border-radius: 5px; position: absolute; bottom: 40px;"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p>Cirrus é um framework SCSS moderno, <strong>modular</strong> e centrado em <strong>componentes</strong>, criado por Stanley Lim (Spiderpig86) em 2016.</p>
+        <ul>
+          <li><strong>Histórico:</strong> Evoluiu de um reset CSS simples para uma biblioteca completa de prototipagem rápida.</li>
+          <li><strong>Contexto:</strong> Ocupa o espaço entre o utilitarismo do Tailwind e a rigidez do Bootstrap.</li>
+          <li><strong>Filosofia:</strong> Permitir estilos bonitos "fora da caixa" sem sacrificar a leveza (aprox. 31kB gzipped).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-num">02</div>
+  </div>
+</body>
+</html>
