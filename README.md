@@ -2,7 +2,7 @@
 
 Projeto educacional básico com as entidades Filme, Artista, Ficha Técnica e Diretor. A interface usa Cirrus CSS e o servidor usa **Node.js, Express, Handlebars e Sequelize** com SQLite.
 
-## Como executar sem Python
+## Como executar
 
 É necessário ter Node.js instalado. Dentro da pasta do projeto, execute:
 
