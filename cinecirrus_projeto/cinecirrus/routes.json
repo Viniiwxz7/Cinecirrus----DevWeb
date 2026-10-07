@@ -1,5 +1,0 @@
-{
-  "routes": ["/", "/filmes", "/filmes/cadastrar", "/filmes/:id", "/artistas", "/artistas/cadastrar", "/artistas/:id", "/fichas", "/fichas/cadastrar", "/fichas/:id", "/diretores", "/diretores/cadastrar", "/diretores/:id", "/componentes"],
-  "rendering": "server-side rendering with Express and Handlebars",
-  "database": "SQLite through Sequelize"
-}
