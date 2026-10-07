@@ -1,0 +1,5 @@
+{
+  "routes": ["/", "/filmes", "/filmes/cadastrar", "/filmes/:id", "POST /filmes/:id/excluir", "/artistas", "/artistas/cadastrar", "/artistas/:id", "POST /artistas/:id/excluir", "/fichas", "/fichas/cadastrar", "/fichas/:id", "POST /fichas/:id/excluir", "/diretores", "/diretores/cadastrar", "/diretores/:id", "POST /diretores/:id/excluir", "/componentes"],
+  "rendering": "server-side rendering with Express and Handlebars",
+  "database": "SQLite through Sequelize"
+}

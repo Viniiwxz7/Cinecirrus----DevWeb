@@ -1,0 +1,103 @@
+<!-- Cabeçalho da tela e identificação da entidade. -->
+<div class="section-heading">
+  <!-- Nome e ícone enviados pelo server.js. -->
+  <div><p class="eyebrow">{{icon}} {{label}}</p><h1>{{pageTitle}}</h1></div>
+  <!-- Links de navegação da tela. -->
+  <div class="action-links"><a class="link-pill primary" href="{{baseUrl}}/cadastrar">Cadastrar</a><a class="link-pill" href="/">Início</a></div>
+</div>
+
+<!-- Este bloco é exibido quando isList é verdadeiro. -->
+{{#if isList}}
+  <!-- Aviso explicando o objetivo da tabela. -->
+  <div class="notice">Esta é a tela <strong>Listar Todos</strong>. Use Detalhar para ver o registro ou Excluir para removê-lo.</div>
+  {{#if rows}}
+  <!-- Contêiner da tabela responsiva. -->
+  <div class="table-container mt-2">
+    <!-- Tabela que mostra todos os registros vindos do Sequelize. -->
+    <table class="data-table">
+      <!-- Cabeçalho da tabela. -->
+      <thead><tr><th>Nome / título</th><th>Campo principal</th><th>Categoria</th><th>Ações</th></tr></thead>
+      <!-- Corpo da tabela. -->
+      <tbody>
+        <!-- Percorre cada registro recebido do server.js. -->
+        {{#each rows}}
+          <!-- Cada repetição cria uma linha. -->
+          <tr>
+            <!-- Mostra o primeiro campo do registro. -->
+            <td><strong>{{title}}</strong></td>
+            <!-- Mostra o segundo campo. -->
+            <td>{{main}}</td>
+            <!-- Mostra o terceiro campo dentro de um chip. -->
+            <td><span class="chip">{{category}}</span></td>
+            <!-- Links e formulário de exclusão do registro. -->
+            <td>
+              <div class="action-links">
+                <a class="link-pill" href="{{../baseUrl}}/{{id}}">Detalhar</a>
+                <form class="inline-form" method="post" action="{{../baseUrl}}/{{id}}/excluir">
+                  <a class="link-pill danger" href="#" onclick="if (confirm('Excluir este registro de forma permanente?')) this.closest('form').submit(); return false;">Excluir</a>
+                </form>
+              </div>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{else}}
+  <div class="notice mt-2">Nenhum registro cadastrado ainda. Use Cadastrar para criar o primeiro.</div>
+  {{/if}}
+
+<!-- Este bloco é exibido quando isDetail é verdadeiro. -->
+{{else if isDetail}}
+  <!-- Card de detalhes do registro selecionado. -->
+  <article class="card">
+    <!-- Conteúdo interno do card do Cirrus. -->
+    <div class="card__container">
+      <!-- Mostra o identificador do registro. -->
+      <span class="chip">Registro #{{row.id}}</span>
+      <!-- Mostra o nome ou título. -->
+      <h2 class="card__title">{{row.title}}</h2>
+      <!-- Mostra a descrição ou sinopse. -->
+      <p class="card__content">{{row.description}}</p>
+      <!-- Organiza os metadados do registro. -->
+      <dl class="meta-list">
+        <!-- Mostra o campo principal. -->
+        <div><dt>Campo principal</dt><dd>{{row.main}}</dd></div>
+        <!-- Mostra a categoria. -->
+        <div><dt>Categoria</dt><dd>{{row.category}}</dd></div>
+        <!-- Mostra qual entidade está sendo exibida. -->
+        <div><dt>Entidade</dt><dd>{{label}}</dd></div>
+        <!-- Mostra um status didático. -->
+        <div><dt>Status</dt><dd>Exemplo ativo</dd></div>
+      </dl>
+      <!-- Ações do detalhe: voltar à lista ou excluir o registro. -->
+      <div class="action-links mt-2">
+        <a class="link-pill" href="{{baseUrl}}">Voltar à lista</a>
+        <form class="inline-form" method="post" action="{{baseUrl}}/{{row.id}}/excluir">
+          <a class="link-pill danger" href="#" onclick="if (confirm('Excluir este registro de forma permanente?')) this.closest('form').submit(); return false;">Excluir registro</a>
+        </form>
+      </div>
+    </div>
+  </article>
+
+<!-- Se não é lista nem detalhe, o template exibe o cadastro. -->
+{{else}}
+  <!-- Formulário que envia dados para a rota POST da entidade. -->
+  <form class="form-box" method="post" action="{{baseUrl}}">
+    <!-- Grid do Cirrus que organiza os campos. -->
+    <div class="row">
+      <!-- Cria um input para cada campo enviado pelo server.js. -->
+      {{#each fields}}
+        <div class="col-12 col-md-6">
+          <!-- Label explica qual dado deve ser preenchido. -->
+          <label for="{{name}}">{{label}}
+            <!-- O name é usado pelo Express para montar req.body. -->
+            <input id="{{name}}" name="{{name}}" type="text" required placeholder="Digite {{labelLower}}">
+          </label>
+        </div>
+      {{/each}}
+    </div>
+    <!-- Links de ação do formulário; não usamos o componente button. -->
+    <div class="action-links mt-2"><a class="link-pill" href="{{baseUrl}}">Cancelar</a><a href="#" class="link-pill primary" onclick="this.closest('form').submit(); return false;">Salvar cadastro</a></div>
+  </form>
+{{/if}}

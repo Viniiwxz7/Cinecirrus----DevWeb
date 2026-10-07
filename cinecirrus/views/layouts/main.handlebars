@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Define que este documento usa HTML moderno. -->
+<html lang="pt-BR">
+<!-- Informa que o conteúdo está em português do Brasil. -->
+<head>
+  <!-- Permite acentos e caracteres especiais. -->
+  <meta charset="UTF-8">
+  <!-- Faz a página se adaptar a celulares. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descreve o projeto para ferramentas do navegador. -->
+  <meta name="description" content="CineCirrus com Express, Handlebars e Sequelize">
+  <!-- Define o título da aba do navegador. -->
+  <title>{{title}} | CineCirrus</title>
+  <!-- Define o ícone que aparece na aba. -->
+  <link rel="icon" href="/logo.svg">
+  <!-- Carrega o framework Cirrus CSS pela CDN. -->
+  <link rel="stylesheet" href="https://unpkg.com/cirrus-ui@0.8.0/dist/cirrus.min.css">
+  <!-- Carrega os estilos próprios do projeto. -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Cabeçalho compartilhado entre todas as páginas. -->
+  <header class="site-header">
+    <!-- Limita a largura e organiza marca e menu. -->
+    <div class="header-inner">
+      <!-- Link da marca que volta para a página inicial. -->
+      <a class="brand" href="/"><img src="/logo.svg" width="38" height="38" alt=""> CineCirrus</a>
+      <!-- Menu principal com as rotas das quatro entidades. -->
+      <nav class="main-nav">
+        <a href="/filmes">Filmes</a>
+        <a href="/artistas">Artistas</a>
+        <a href="/fichas">Fichas técnicas</a>
+        <a href="/diretores">Diretores</a>
+        <a href="/componentes">Componentes</a>
+      </nav>
+    </div>
+  </header>
+  <!-- O template atual entra somente aqui, uma vez. -->
+  <main class="app-shell">{{{body}}}</main>
+  <!-- Rodapé compartilhado. -->
+  <footer class="site-footer"><strong>CineCirrus</strong> · Express + Handlebars + Sequelize · Cirrus CSS</footer>
+</body>
+</html>

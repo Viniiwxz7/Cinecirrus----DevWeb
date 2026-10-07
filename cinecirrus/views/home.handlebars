@@ -1,0 +1,43 @@
+{{! Bloco de apresentação inicial do projeto. }}
+<section class="hero">
+  {{! Identifica a parte da atividade atendida. }}
+  <p class="eyebrow">Parte 1 + Parte 4</p>
+  {{! Título principal da aplicação. }}
+  <h1>CineCirrus: catálogo de cinema</h1>
+  {{! Explicação curta das tecnologias. }}
+  <p>Projeto básico usando Express, Handlebars, Sequelize e Cirrus CSS.</p>
+  {{! Link para a tela que demonstra os componentes. }}
+  <div class="action-links"><a class="link-pill primary" href="/componentes">Ver componentes</a></div>
+</section>
+
+{{! Título da seção de entidades. }}
+<div class="section-heading"><div><p class="eyebrow">Módulos do projeto</p><h2>Escolha uma entidade</h2></div><span class="chip">Banco SQLite</span></div>
+
+{{! Grid de cards gerado a partir do objeto entities. }}
+<div class="row">
+  {{! Repete o card para Filme, Artista, Ficha e Diretor. }}
+  {{#each entities}}
+    {{! Coluna responsiva do Cirrus. }}
+    <div class="col-12 col-md-6 col-lg-3">
+      {{! Card visual da entidade. }}
+      <article class="card entity-card">
+        {{! Conteúdo interno do card. }}
+        <div class="card__container">
+          {{! Ícone e indicação do tipo. }}
+          <span class="eyebrow">{{icon}} entidade</span>
+          {{! Nome plural da entidade. }}
+          <h3 class="card__title">{{plural}}</h3>
+          {{! Descrição do módulo. }}
+          <p class="card__content">CRUD com telas de listar, detalhar, cadastrar e excluir.</p>
+          {{! Links de listagem e cadastro. }}
+          <div class="card__footer action-links"><a class="link-pill" href="{{url}}">Listar</a><a class="link-pill primary" href="{{url}}/cadastrar">Cadastrar</a></div>
+        </div>
+      </article>
+    </div>
+  {{/each}}
+</div>
+
+{{! Mostra os fluxos pedidos na atividade. }}
+<h2 class="mt-2">Fluxo exigido</h2>
+{{! Cria um aviso para cada etapa. }}
+<div class="row">{{#each flows}}<div class="col-12 col-md-4"><div class="notice"><strong>{{number}}. {{name}}</strong><br>{{description}}</div></div>{{/each}}</div>

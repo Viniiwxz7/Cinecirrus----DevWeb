@@ -1,0 +1,18 @@
+{
+  "name": "cinecirrus",
+  "version": "2.0.0",
+  "private": true,
+  "description": "CRUD educacional com Express, Handlebars, Sequelize e Cirrus CSS",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node tools/check.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^7.1.3",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  }
+}
